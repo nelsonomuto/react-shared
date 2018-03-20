@@ -13,7 +13,8 @@ Package.describe({
 Package.onUse(function(api) {
   api.versionsFrom('1.6.1');
   api.use('ecmascript');
-  api.mainModule('react-shared.js');
+  console.log('nomuto:shared log onUse');
+  api.mainModule('react-shared.js', 'client');
 });
 
 Package.onTest(function(api) {
